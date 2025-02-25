@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./Backend # This looks for a Dockerfile inside Backend/
+    container_name: chatbot_backend
+    ports:
+      - "8080:8080"
+    env_file:
+      - Backend/.env
+    volumes:
+      - ./Backend:/app
+      - /app/node_modules
+    command: ["npm", "start"]
+
+  frontend:
+    build: ./Frontend # This looks for a Dockerfile inside Frontend/
+    container_name: chatbot_frontend
+    ports:
+      - "3000:80" # Nginx serves on port 80
+    depends_on:
+      - backend

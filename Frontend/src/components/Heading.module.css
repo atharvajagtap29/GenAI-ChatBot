@@ -1,0 +1,21 @@
+.Heading {
+    margin-top: 20px;
+    padding: 15px 30px; /* Increased padding for a better look */
+    text-align: center;
+    background-color: #f9f9f9; /* Soft background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: 'Arial', sans-serif; /* Clean font */
+}
+
+.Heading h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Larger font size */
+    color: #333; /* Darker text color for contrast */
+}
+
+/* Optional: Add a hover effect */
+.Heading:hover {
+    background-color: #e0f7fa; /* Light hover color */
+    transition: background-color 0.7s; /* Smooth transition */
+}

@@ -1,0 +1,64 @@
+/* This is modular css file for chatbox */
+
+.ChatBox {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; /* Chatbox background */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Set max width */
+    margin: 20px auto 0; /* Add margin-top for spacing */
+    overflow: hidden; /* To ensure border-radius is respected */
+}
+
+.ChatArea {
+    padding: 15px;
+    flex: 1;
+    overflow-y: auto; /* Scrollable area */
+    max-height: 400px; /* Limit height */
+}
+
+.UserMessage {
+    background-color: #dcf8c6; /* Light green for user messages */
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px 0;
+    align-self: flex-end; /* Align user messages to the right */
+}
+
+.BotMessage {
+    background-color: #f1f0f0; /* Light gray for bot messages */
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px 0;
+    align-self: flex-start; /* Align bot messages to the left */
+}
+
+.InputArea {
+    display: flex;
+    border-top: 1px solid #e0e0e0;
+    padding: 10px;
+    background-color: #f9f9f9; /* Input area background */
+}
+
+.Input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.SendButton {
+    padding: 10px 15px;
+    background-color: #007bff; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.SendButton:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}
